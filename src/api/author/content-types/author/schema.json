@@ -15,19 +15,23 @@
     "name": {
       "type": "string"
     },
-    "avatar": {
+    "photo": {
       "type": "media",
-      "multiple": false,
+      "multiple": true,
       "required": false,
-      "allowedTypes": ["images", "files", "videos"]
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
     },
-    "email": {
-      "type": "string"
+    "bio": {
+      "type": "blocks"
     },
-    "articles": {
+    "blogs": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::article.article",
+      "target": "api::blog.blog",
       "mappedBy": "author"
     }
   }
