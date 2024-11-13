@@ -34,12 +34,6 @@
     },
     "published_date": {
       "type": "date"
-    },
-    "author": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::author.author",
-      "inversedBy": "blogs"
     }
   }
 }
