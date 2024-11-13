@@ -1,12 +1,19 @@
 module.exports = [
-  'strapi::logger',
-  'strapi::errors',
-  'strapi::security',
-  'strapi::cors',
-  'strapi::poweredBy',
-  'strapi::query',
-  'strapi::body',
-  'strapi::session',
-  'strapi::favicon',
-  'strapi::public',
+  "strapi::logger",
+  "strapi::errors",
+  "strapi::security",
+  {
+    name: "strapi::cors",
+    config: {
+      origin: ["https://blog.septiawantechnology.com"], // Ganti dengan domain frontend kamu
+      methods: ["GET", "POST", "PUT", "DELETE"], // Tentukan metode HTTP yang diperbolehkan
+      allowedHeaders: ["Content-Type", "Authorization"], // Tentukan header yang diperbolehkan
+    },
+  },
+  "strapi::poweredBy",
+  "strapi::query",
+  "strapi::body",
+  "strapi::session",
+  "strapi::favicon",
+  "strapi::public",
 ];
