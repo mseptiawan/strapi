@@ -2,6 +2,7 @@
   "name": "strapi",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://blog.septiawantechnology.com",
   "description": "A Strapi application",
   "scripts": {
     "build": "strapi build",
